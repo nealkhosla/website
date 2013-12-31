@@ -1,0 +1,27 @@
+{% extends "classes.html" %}
+{% block classinfo %}
+<h4>Math</h4>
+<div class="content"> Select a course to see my review:
+<div class="btn-group">
+  <button type="button" class="btn btn-default dropdown-toggle" data-toggle="dropdown">
+    Select a class <span class="caret"></span>
+  </button>
+	<ul class="dropdown-menu" role="menu">
+	<li id="MATH51" onclick="showClass(this.id)"><a href="#">MATH51</a></li>
+	<li id="MATH52" onclick="showClass(this.id)"><a href="#">MATH52</a></li>
+	<li id="MATH53" onclick="showClass(this.id)"><a href="#">MATH53</a></li>
+	<li id="MATH104" onclick="showClass(this.id)"><a href="#">MATH104</a></li>
+  </ul>
+</div>
+</div>
+<br>
+<div id="MATH51_info" class="course" style="display:none">
+	<b>MATH51 - </b> Math 51 can really depend on your professor/section leader in terms of the quality of the learning resources you have so I'd really make an effort to try to get the best section leader or professor you can (either through reviews on course rank or somewhere like this OR by actually going to the sections/lectures the first week and seeing which one is the best). One of the secrets of Math 51 is that you can go to any lecture even if you're not enrolled in it - do this if you have to. Besides that, this is a very important class, especially for computer scientists as a strong Linear Algebra foundation is pivotal for practically everything in computing (some examples: Machine Learning, Graphics, Computer Vision, Recommendation Systems, and more...). This class will also help you as a mathematical thinker and problem solver and give you practical experience with solving problems in Linear Algebra. The section at the end on differential calculus is also very important and useful. Overall, this class is a must take, even if you don't love it.
+	</div><div id="MATH52_info" class="course" style="display:none">
+	<b>MATH52 - </b> Math 52 is the most challenging of the 50-series by far. Much like MATH 51, it is very dependent on your lecturer, but overall, I thought that this was still a great class. This was probably the only pure math class I've taken in college that had me excited about solving interesting problems and challenging and stretching my brain like I often did in High School math and before. All that being said, this class is generally difficult and generally fun. I haven't really found very much the material practically applicable to the work I've done in CS (with some exceptions) as the class mostly focuses on how to setup double and triple integrals before expanding to some more abstract concepts (Green's Theorem, Stoke's Theorem, etc.), however it's definitely a worthwhile class just to challenge yourself and develop problem-solving skills. 
+	</div><div id="MATH53_info" class="course" style="display:none">
+	<b>MATH53 - </b> Math 53 is the easiest of the 50-series in my opinion. This class was easy and required little more than memorizing how to apply simple techniques to problems and then doing so. The material as a whole hasn't been immensely useful but I feel like learning how to solve differential equations and understanding some of the concepts (stability, matrix exponentials, laplace transforms) are definitely worthwhile. 
+	</div><div id="MATH104_info" class="course" style="display:none">
+	<b>MATH104 - </b> This class (much like all of the Math department), is incredibly dependent on the teacher you have. I had Rafe Mazzeo and he was a god awful lecturer and kind of a dick to be honest. Beyond just being bad at lecturing (messing up in his notes, going way too fast over certain parts, poor explanations, and not explaining his confusing notations), he would laugh at people when they asked questions and often mock them and say that he just explained that (missing the point that they were obviously confused by his explanation). If he is teaching the class, I would highly recommend not taking it. All that being said, the material in this class is VERY important for Computer Science, but if you want a more applied look at similiar material which will be equivalently important, I would recommend looking at EE263 (taught by Stephen Boyd and Sanjay Lall in alternating years) as I've heard great things about the class and it will help build your foundation in Linear Algebra.
+	</div>
+{% endblock %}

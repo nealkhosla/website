@@ -1,0 +1,21 @@
+{% extends "classes.html" %}
+{% block classinfo %}
+<h4>Statistics</h4>
+<div class="content">
+As of now, I have only taken one class in the STATS department officially but I expect this number to rise over the next year or two so I'm leaving the framework in to add more classes.
+<br><br>
+Select a course to see my review:
+<div class="btn-group">
+  <button type="button" class="btn btn-default dropdown-toggle" data-toggle="dropdown">
+    Select a class <span class="caret"></span>
+  </button>
+	<ul class="dropdown-menu" role="menu">
+	<li id="STATS202" onclick="showClass(this.id)"><a href="#">STATS202</a></li>
+  </ul>
+</div>
+</div>
+<br>
+<div id="STATS202_info" class="course" style="display:none">
+	<b>STATS202 - </b> I don't have that much to say about this class as it is pretty straightforward and didn't require too much work or effort. I thought it was fairly easy as it didn't really require me to understand more of the theory and concepts behind data mining techniques but just how to implement them in R mostly. For me, it was my first time using R so I learned that, and it was a nice introduction to some techniques in data mining that further courses would cover in more depth (particularly <a href="/cs">CS229</a>), but on the whole it wasn't that useful. I took the class with a visiting professor from Google so I'm not sure if it changes a lot during the year (I hope it does) but I've heard it's still fairly easy.
+	</div>
+{% endblock %}

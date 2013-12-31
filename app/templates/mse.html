@@ -1,0 +1,21 @@
+{% extends "classes.html" %}
+{% block classinfo %}
+<h4>Management Science & Engineering</h4>
+<div class="content"> Select a course to see my review:
+<div class="btn-group">
+  <button type="button" class="btn btn-default dropdown-toggle" data-toggle="dropdown">
+    Select a class <span class="caret"></span>
+  </button>
+	<ul class="dropdown-menu" role="menu">
+	<li id="MSE111" onclick="showClass(this.id)"><a href="#">MS&E111</a></li>
+	<li id="MSE140" onclick="showClass(this.id)"><a href="#">MS&E140</a></li>
+  </ul>
+</div>
+</div>
+<br>
+<div id="MSE111_info" class="course" style="display:none">
+	<b>MS&E 111 - </b> This class was taught by Ashish Goel with a flipped classroom approach. Although I never went to the lecture or interacted with Ashish, from what I heard, he was generally very interested in his student's learning. I found this class to be pretty good (albeit a bit easy having taken more advanced classes in optimization) and for most people without that background in optimization, this would be a good intro and not too demanding. The problem sets weren't too bad (compared to CS classes especially) and the curve was generous given that the quality of students was lower than most CS classes (MS&E department). All that being said, I found the material somewhat interesting and I liked Ashish's lecture videos as I could tell he was a very smart guy and explained the topics clearly and thoroughly (if you can understand his accent which some people said was hard but I had no trouble with). Overall, if you're looking for an easy engineering fundamental, this is probably a good one as it's not too hard but still interesting and useful.
+	</div><div id="MSE140_info" class="course" style="display:none">
+	<b>MS&E 140 - </b> I took this class effectively as a filler class and overall it was pretty easy and did provide me with some understanding of accounting concepts that I imagine will come into play if I ever work on a startup. I actually liked the class where it required doing really basic math (addition, multiplication, basic algebra) as it was kind of fun and easy in a way that you don't find in any other college courses. If you do choose to take this class, make sure to just do tons of practice tests to study for the midterm and final as knowing the concepts isn't really that important and questions are recycled (at least concepts) almost always. As a whole, a decent class to supplement a harder quarter where you can still learn some stuff that could be useful and it was kind of fun.
+	</div>
+{% endblock %}

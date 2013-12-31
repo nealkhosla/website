@@ -10,9 +10,21 @@ def index():
 def projects():
 	return render_template('projects.html')
 
-@app.route('/classes')
-def classes():
-	return render_template('classes.html')
+@app.route('/cs')
+def cs():
+	return render_template('cs.html')
+
+@app.route('/math')
+def math():
+	return render_template('math.html')
+
+@app.route('/stats')
+def stats():
+	return render_template('stats.html')
+
+@app.route('/mse')
+def mse():
+	return render_template('mse.html')
 
 @app.route('/resume')
 def resume():

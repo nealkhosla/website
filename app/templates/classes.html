@@ -2,93 +2,20 @@
 {% block content %}
 <div class="container">
 	<div class="row">
-	<div class="col-md-2"></div>
-	<div class="col-md-8">	
+		<div class="col-md-2"></div>
+		<div class="col-md-8">	
 		<h3>Classes</h3>
-		<p>Here, I'll try to objectively chronicle what different classes I've taken at Stanford are like - I'll add more information to this as I get more time so that other students can know what to expect from classes. If you're a student reading this and want more information on one of these classes (or if you teach one of these classes), feel free to <a href="/index#contact">contact me</a>. I'll start by noting that generally when I take classes I'm motivated by a few main things: how much I learn, how much it develops my critical thinking/problem solving ability, whether or not I could've, and more importantly WOULD'VE, learned the material on my own, and how interesting the material was to me.</p>
-	</div>
-	<div class="col-md-2"></div>
+		<p>Here, I'll try to objectively chronicle what different classes I've taken at Stanford are like - I'll add more information to this as I get more time so that other students can know what to expect from classes. If you're a student reading this and want more information on one of these classes (or if you teach one of these classes), feel free to <a href="/index#contact">contact me</a>. I'll start by noting that generally when I take classes I'm motivated by a few main things: how much I learn, how much it develops my critical thinking/problem solving ability, whether or not I could've, and more importantly <i>would've</i>, learned the material on my own, and how interesting the material was to me.</p>
+		</div>
+		<div class="col-md-2"></div>
 	</div>
 	<div class="row">
-	<div class="col-md-2"></div>
-	<div class="col-md-8" id="about">
-	<select id="subject" onchange="showSubject()">
-		<option value="CS">Computer Science</option>
-		<option value="MATH">Math</option>
-		<option value="STATS">Statistics</option>
-		<option value="MSE">MS&E</option>
-	</select>
-	<div id="CS" class="class_menu" style="display:none">
-        <select id="cs_opts" onchange="parseCS()">
-			<option value="CS103">CS103</option>
-            <option value="CS106">CS106A/B/X</option>
-            <option value="CS107">CS107</option>
-            <option value="CS108">CS108</option>
-			<option value="CS109">CS109</option>
-			<option value="CS110">CS110</option>
-			<option value="CS124">CS124</option>
-			<option value="CS142">CS142</option>
-			<option value="CS145">CS145</option>
-			<option value="CS161">CS161</option>
-			<option value="CS181W">CS181W</option>
-			<option value="CS221">CS221</option>
-			<option value="CS224M">CS224M</option>
-			<option value="CS229">CS229</option>
-        </select>
-	</div>
-	<div id="MATH" class="class_menu" style="display:none">
-        <select id="math_opts" onchange="parseMath()">
-            <option value="MATH51">MATH 51</option>
-            <option value="MATH52">MATH 52</option>
-            <option value="MATH53">MATH 53</option>
-			<option value="MATH104">MATH 104</option>
-        </select>
-	<div id="STATS" class="class_menu" style="display:none">
-        <select id="stats_opts" onchange="parseStats()">
-            <option value="STATS202">STATS 202</option>
-        </select>
-	</div>	
-	<div id="MSE" class="class_menu" style="display:none">
-		<select id="mse_opts" onchange="parseMSE()">
-			<option value="MSE111">MS&E 111</option>
-			<option value="MSE140">MS&E 140</option>
-		</select>
-	</div>
-</div>	
-		<h4>Computer Science</h4>
-		<div id="CS106" class="course" style="display:none">
-		<b>CS106A/B/X&nbsp;-</b>I've only taken 106X, but I've helped a lot of students through all 3 of these classes, so I'll try to chronicle them together. 106A is one of those classes everyone at Stanford says "you have to take," but I'd really suggest it's more than that - it's a class that you have to engage in. 
-In my opinion, this also applies to 106B and X (particularly to MS&E majors who only take the class because it's required). To really gain anything useful out of these classes, you really need to make sure you wholeheartedly dedicate yourself to it and try to master the material. This probably means dedicating a lot more time to these classes than you want to - if you have limited or no coding experience prior to these classes you have to remember that learning to code can be an incredibly difficult and time-consuming activity. These classes can really help further your skills to think critically and algorithmically if you take the time to master them and if you get through 106B/X and really grok the material, you can certainly reach a point where you can actually build viable things on a computer. If you're going to take these classes and skip lecture, copy the projects, go to the LAIR to get the asssignments done for you, or in anyway just do anything less than fully-engage with the class, you probably won't get that much out of them. I feel very strongly about the way people take these classes and what I consider to be artificially inflated enrollment numbers in these classes because most students who take them don't actually take them, they just get the work done. <br> TL;DR: Actually try in these classes and you will gain a lot - otherwise don't take them.</td></tr>
-		</div><div id="CS107" class="course" style="display:none">
-		<b>CS107&nbsp;-</b>This is a great class. Takes a lot of time but you can/will learn a lot to get through this class. They really take the training wheels off in this class so expect to have to change your approach even if you did well in 106B. It's a very doable class though if you approach it correctly. If you have little experience with C-programming and aren't a coding prodigy, expect to spend a lot of time being very frustrated in this class, but I assure you it's entirely worth it.
-		</div><div id="CS109" class="course" style="display:none">
-		<b>CS109&nbsp;-</b>This class really isn't a CS class but is mostly a probability class. I would highly recommend this class to anyone (even people who aren't studying CS). This is the type of class that really shapes the way you think about and understand the world. Mehran is a very engaging lecturer and is generally very helpful and interested in his student's learning. As far as probability classes, from what I can tell, this is easier and a little less theoretical than STATS 116. If you take this class you will also get a basic preview of Naive Bayes which is pretty cool if you've never seen anything like that before.
-		</div><div id="CS142" class="course" style="display:none">
-		<b>CS142&nbsp;-</b>Frankly, this class was useless for me. This class was more work than I wanted it to be and the material didn't help me develop as a thinker or programmer in anyway. John Ousterhout is a good lecturer, but the class just really isn't worth taking in my opinion. If you're interested in learning about how to create Web Applications, go do some online tutorials for Rails, Django, Flask, or any framework of your choice. There are a lot of resources out there and they'll save you time, effort, and taking this class.
-		</div><div id="CS110" class="course" style="display:none">
-		<b>CS110&nbsp;-</b>I took this class when it was still taught by Mendel, and although he was a decent lecturer with some very compelling stories from industry and obviously a very smart and nice guy, this class just wasn't very useful. While some of the projects were mildly interesting, the class as a whole was entirely dependent on your performance on exams (since everyone did perfect on the projects) and the exams were effectively a vocabulary test. All that being said, there were some useful concepts that were taught in the vocabulary (e.g. atomicity, synchronization) so it wasn't just a waste of time - it just wasn't that great. I've heard they've made this class much better under Jerry Cain and when I looked at the assignments and tests that he posted from a recent quarter it seemed much better. If you get a chance to take it with Jerry as opposed to Mendel I would probably do so if you're concerned about learning and developing your critical thinking/systems programming skills. 
-		</div><div id="CS103" class="course" style="display:none">
-		<b>CS103&nbsp;-</b>I took this class with Keith Schwarz and I can very easily describe this class as challenging and amazing. Yes, some of the material gets very theoretical, but unless you go on to take further computing theory classes, you won't get much exposure to that kind of stuff going forward. I found that this is one of the few classes that will give you a thorough introduction to writing proofs which can be very useful for upper level classes in AI, Math, Algorithms, etc. As well, the problems to me were just very interesting and pushed my brain in ways I didn't experience in other CS classes. A lot of the stuff about complexity theory was very interesting to me and useful going forward. I would highly recommend taking this class and really putting a lot of effort into it for any CS student - it will really help you going forward and help you become a better thinker and problem-solver.
-		</div><div id="CS124" class="course" style="display:none">
-		<b>CS124&nbsp;-</b>This class was OK. It was fairly easy, and seemed to have a self-selecting set of CS students which made the curve much easier (in simple terms, I'm saying that most of the kids that took this class didn't seem that smart or they didn't spend much time on it). It's one of the easier, least time-intensive CS classes out there so if you're looking for that kind of class to fit into a crowded quarter, it probably is a decent fit. All that being said, this class had some interesting and useful concepts as an introduction to the methodology of NLP, and I think that had I engaged with the material more and challenged myself to do more and learn more in it, I could've come away with some good material. This was a flipped classroom when I took it and I don't think it was particularly effective. The projects don't really understand a strong mathematical or conceptual understanding of the material so you never really were required to master what was some very interesting and useful material. I haven't taken any of the next level NLP classes yet, but I imagine having taken this class could be helpful for some of those.
-		</div><div id="CS108" class="course" style="display:none">
-		<b>CS108&nbsp;-</b>For me, this class wasn't that useful as I had a good amount of experience coding in Java. That being said, it is a good way to log a lot of hours and really learn how to code better in Java. You won't really "learn" much in terms of concepts, especially if you have taken CS 110 since a few of the projects were quite similar, and lecture is more or less useless since the lecture notes were pretty good. The projects were decent and helped give you an insight into working in teams and coding more extensively in an OOP language in Java that is quite useful. Overall, since a lot of people have not coded a lot in Java, I would say this is a decent class that will help you develop your coding skills in a useful language that few other classes in the department emphasize and will give you a good mastery of OOP. It is also very easy to do well in this class and it should be a good GPA booster provided you spend the time to do well on the projects.
-		</div><div id="CS161" class="course" style="display:none">
-		<b>CS161&nbsp;-</b>This class changes teachers a lot so it is very dependent on the teacher you get. I took the class with Luca Trevisan, who was a very dry lecturer and not a very good teacher in my opinion. The class effectively boiled down to your ability to reduce problems to other algorithms the class had covered. While this seems like it would be kind of mindless and useless, it can actually be quite challenging and is useful in a lot of scenarios you might not imagine. Although I didn't enjoy the teaching in this class, I really thought it was worthwhile, interesting, and helped me grow as a thinker. You'll really get a mastery of runtime complexity and insights into some of the most powerful and important algorithms in Computer Science. It will help you really develop your algorithmic thinking and if that still isn't enough to convince you to take the class, it will help you get a job as most of the algorithms covered are directly applicable to interview questions.
-		</div><div id="CS224M" class="course" style="display:none">
-		<b>CS224M&nbsp;-</b>Yoav is a very nice, smart guy who didn't seem to care much about this class. The class had a flipped classroom approach which was not great because as usual in the flipped classroom approach, the lecture videos didn't cover enough in-depth to really help you wrap your head around what was sometimes conceptually complex material. This basically meant most of the material was effectively self-taught for me. Although the professor seemed ambivalent about the class and the teaching materials weren't great, the material was still very interesting to me and game theory is a very interesting concept. I thought the material also provided a unique and good framework for thinking about real world scenarios. The problem sets and test were also generally kind of fun and challenging, plus were what actually helped me learn the material. The workload for this class was not too bad either.
-		</div><div id="CS221" class="course" style="display:none">
-		<b>CS221&nbsp;-</b>This class is a lot of work but was very interesting and useful. I would definitely take this class.
-		</div><div id="CS145" class="course" style="display:none">
-		<b>CS145&nbsp;-</b>Frankly, I hated this class. Jennifer Widom's flipped classroom approach was the best I have seen, but mostly because the material was so trivial conceptually for the most part. The projects were poorly organized and the class took more effort and time than it should've because of the ridiculous amount of random stuff you had to do for the class. The TA's were awful as they were mostly selected just on how they had done in CS145 as opposed to actual teaching skills or intelligence. All the material could've easily been self-taught and a lot of the stuff at the end was just forced in there to make the class cover all it could about SQL (besides the interesting implementation details of course). The class should've actually covered NoSQL systems instead of just brushing over it at the end. Widom was kind of useless as a teacher and often told us to go to the TA's because she didn't know how to do the projects/problems and she also didn't understand what a proof by induction was... The tests tested on terrible minutia that are easily googleable but allowed her to say her tests were challenging (for example, she asked questions on the difference between different SQL systems or the default behavior of certain obscure SQL features). This terrible test design was also paired with a complete paranoia about releasing previous tests for practice (probably because she asked the same minutia over and over again) and she wouldn't even release an online version of answers to the only practice test she did provide.
-On top of all this, the project requirements and grading procedures were unclear, which reflected the general lack of organization in this class (for example, Widom required the use of class2go, a cs145 website, coursework, and one or two other sites for administrative purposes of the class). In spite of all this, as awful as I thought the class was, there was some use in practicing a lot of SQL, some of the challenge problems were interesting, and this will probably require less work than most systems track classes. This class could be useful for non-CS majors who need to learn to work with SQL systems.
-		</div><div id="CS229" class="course" style="display:none">
-		<b>CS229&nbsp;-</b>This was a great class that gave me a great opportunity to work on a <a href="/projects">project</a> that taught me a lot and really learn the theory behind concepts in Machine Learning. While this class is incredibly popular now, I could tell many of the kids in the class weren't equipped to deal with the math (which can be quite hairy) in this class. I thought the Linear Algebra wasn't terrible but the problem sets are long and can be challenging. Andrew Ng is a great lecture and the notes are very well put together and refined. I would highly recommend this class to anyone and would go further and recommend that you take on a challenging project, engage with it, and use it as an opportunity to teach yourself something new instead of just finding a data set and applying SVM to it as many of the projects did. The class can be very time consuming but worth it if you approach it in this manner.
+		<div class="col-md-2"></div>
+		<div class="col-md-8" id="about">
+			{% block classinfo %}
+			{% endblock %}
 		</div>
-		</table>
-		<br>
-	</div> 
-	<div class="col-md-2"></div>
+		<div class="col-md-2"></div>
 	</div>
 	<hr>
 </div>

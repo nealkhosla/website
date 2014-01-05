@@ -1,4 +1,4 @@
 /flask/**
 virtualenv.py
 virtualenv.pyc
-/app/static/css/font-awesome-4.0.3/**
+/app/static/css/font-awesome-4.0.3/
